@@ -203,7 +203,7 @@ open class ClientTunnel: Tunnel {
                 self.database.tableAPPCONFIGUpdateItem(key: "port", value: port!)
                 self.database.tableNETWORKFLOWLOGUpdateItem(key: "localPort", value: port!)
             }
-            
+            testVPNLog(self.TAG + "FUCK ________")
             // Start reading messages from the tunnel connection.
             //readNextPacket()
             

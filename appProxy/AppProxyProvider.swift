@@ -92,7 +92,7 @@ class AppProxyProvider: NEAppProxyProvider, TunnelDelegate, GCDAsyncSocketDelega
         s = GCDAsyncSocket()
         s!.setDelegate(self, delegateQueue: DispatchQueue.main)
         do{
-            try s!.connect(toHost: "119.23.215.159", onPort: UInt16(7788))
+            try s!.connect(toHost: "pm.rtnetworks.com.cn", onPort: UInt16(7788))
         }
         catch{}
         let newTunnel = ClientTunnel()
@@ -1140,7 +1140,7 @@ class AppProxyProvider: NEAppProxyProvider, TunnelDelegate, GCDAsyncSocketDelega
             } catch {
             }
             
-            postRequest(url: "http://119.23.215.159/test/checkin/checkin.php", jsonData: jsonData) { retStr in
+            postRequest(url: "http://pm.rtnetworks.com.cn:7790/checkin/checkin.php", jsonData: jsonData) { retStr in
                 do{
                     if let json = try JSONSerialization.jsonObject(with: retStr as! Data, options: []) as? NSDictionary {
                         //let lastIP = self.database.tableAPPCONFIGQueryItem(key: "ip")

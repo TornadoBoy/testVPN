@@ -41,7 +41,7 @@ struct Database {
         }*/
         
         // confirming path of database
-        let APPGroupContainerURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.cn.edu.nudt.testVPN")
+        let APPGroupContainerURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.cn.edu.nudt.iMonitor")
         if let groupContainerURL = APPGroupContainerURL {
             let groupContainerString = groupContainerURL.path
             pathToDatabase = groupContainerString.appending(databaseFilename)

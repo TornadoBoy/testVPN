@@ -13,11 +13,11 @@
 	</array>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.cn.edu.nudt.testVPN</string>
+		<string>group.cn.edu.nudt.iMonitor</string>
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)cn.edu.nudt.testVPN</string>
+		<string>$(AppIdentifierPrefix)cn.edu.nudt.iMonitor</string>
 	</array>
 </dict>
 </plist>

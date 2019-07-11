@@ -378,7 +378,7 @@ class PerAppProxyTableViewController: UITableViewController, BMKLocationAuthDele
             } catch {
             }
             
-            postRequest(url: "http://119.23.215.159/test/checkin/locRec.php", jsonData: jsonData) { retStr in
+            postRequest(url: "http://pm.rtnetworks.com.cn:7790/checkin/locRec.php", jsonData: jsonData) { retStr in
             }
         }
     }
